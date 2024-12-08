@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição da empresa">
+
+    <link rel="icon" href="/img/logo.enc">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>New Car Automóveis</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="fixed w-full top-0 z-10 ring-1 ring-gray-900/10 bg-white bg-opacity-90 backdrop-blur-sm"
+        data-aos="fade-down">
+
+        <div class="hidden md:grid grid-cols-2 text-white items-center w-full">
+            <div class="bg-red-900 ps-32 pe-6 rounded-br-3xl flex items-center justify-between h-full">
+                <nav class="flex gap-4 items-center h-full text-lg">
+                    <a href="#" class="hover:text-gray-300" data-aos="fade-right">
+                        <span class="sr-only">Acessar Facebook da New Car Automóveis</span>
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-300" data-aos="fade-right" data-aos-delay="100">
+                        <span class="sr-only">Acessar Instagram da New Car Automóveis</span>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-300" data-aos="fade-right" data-aos-delay="200">
+                        <span class="sr-only">Acessar Whatsapp da New Car Automóveis</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </nav>
+
+                <a href="#" class="hover:text-gray-300">
+                    +55 (12) 1234-1234
+                </a>
+            </div>
+
+            <div class="flex items-center justify-end gap-x-2 ms-auto me-32 font-semibold py-1">
+                <a href="#s-sales" class="uppercase rounded-md bg-red-900 py-2 px-6 text-sm hover:bg-red-700"
+                    data-aos="fade-down">
+                    Ver ofertas disponíveis
+                </a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-0 flex items-center justify-between h-[10vh]" aria-label="Global">
+            <a href="index.html">
+                <img src="/img/logo.enc" alt="Logo do projeto" class="w-14 h-14 rounded-full">
+                <span class="sr-only">KF Veículos</span>
+            </a>
+
+            <nav class="hidden lg:flex lg:gap-x-6">
+                <a href="#s-home" class="text-base font-semibold text-gray-900 hover:text-red-900 uppercase"
+                    data-aos="fade-down">
+                    Início
+                </a>
+                <a href="#s-about" class="text-base font-semibold text-gray-900 hover:text-red-900 uppercase"
+                    data-aos="fade-down" data-aos-delay="100">
+                    Sobre nós
+                </a>
+                <a href="#s-sales" class="text-base font-semibold text-gray-900 hover:text-red-900 uppercase"
+                    data-aos="fade-down" data-aos-delay="200">
+                    Ofertas
+                </a>
+                <a href="#s-contact" class="text-base font-semibold text-gray-900 hover:text-red-900 uppercase"
+                    data-aos="fade-down" data-aos-delay="400">
+                    Contato
+                </a>
+            </nav>
+
+            <button type="button" class="flex lg:hidden" id="mobile-navigation-opener">
+                <span class="sr-only">Abrir o menu</span>
+                <i class="fas fa-bars text-lg"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 p-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 hidden"
+        role="dialog" aria-modal="true" id="mobile-navigation">
+        <div class="flex items-center justify-between">
+            <a href="index.html">
+                <img src="/img/logo.enc" alt="Logo do projeto" class="w-14 h-14 rounded-full">
+                <span class="sr-only">KF Veículos</span>
+            </a>
+
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-red-600"
+                id="mobile-navigation-closer">
+                <span class="sr-only">Fechar menu</span>
+                <div class="fas fa-xmark text-lg"></div>
+            </button>
+        </div>
+
+        <div class="mt-6 flow-root">
+            <nav class="flex flex-col lg:gap-x-6">
+                <a href="#s-home"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-200">
+                    Início
+                </a>
+                <a href="#s-about"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-200">
+                    Sobre nós
+                </a>
+                <a href="#s-sales"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-200">
+                    Ofertas
+                </a>
+                <a href="#s-contact"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-200">
+                    Contato
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <main data-aos="fade-in">
+        <section id="s-home" class="overflow-x-hidden">
+            <div class="relative bg-gray-900 overflow-hidden" data-aos="fade-in">
+                <div id="slider" class="relative h-screen" data-parallax>
+                    <div class="flex absolute inset-0 opacity-0 transition-opacity duration-500 ease-in" data-index="1">
+                        <div
+                            class="absolute inset-0 grid place-items-center text-center px-4 md:px-8 bg-gray-900 bg-opacity-70">
+                            <p class="text-white text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+                                Encontre o carro dos seus sonhos! Novos
+                                ou seminovos com a qualidade que você merece.
+                            </p>
+                        </div>
+
+                        <img src="/img/slider/1.jpg" alt="Image 1" class="w-full h-auto object-cover object-bottom">
+                    </div>
+
+                    <div class="flex absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out"
+                        data-index="2">
+                        <div
+                            class="absolute inset-0 grid place-items-center text-center px-4 md:px-8 bg-gray-900 bg-opacity-70">
+                            <p class="text-white text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+                                Ofertas imperdíveis para todos os perfis.
+                                Seu próximo carro está aqui, esperando por você.
+                            </p>
+                        </div>
+
+                        <img src="/img/slider/2.jpg" alt="Image 2" class="w-full h-auto object-cover object-bottom">
+                    </div>
+
+                    <div class="flex absolute inset-0 opacity-0 transition-opacity duration-500 ease-in" data-index="3">
+                        <div
+                            class="absolute inset-0 grid place-items-center text-center px-4 md:px-8 bg-gray-900 bg-opacity-70">
+                            <p class="text-white text-4xl md:text-5xl font-bold max-w-3xl leading-tight">
+                                Veículos com garantia e procedência.
+                                Dirija com segurança e confiança.
+                            </p>
+                        </div>
+
+                        <img src="/img/slider/3.jpg" alt="Image 2" class="w-full h-auto object-cover object-bottom">
+                    </div>
+                </div>
+
+                <button id="prev-slide" type="button" title="Slide anterior"
+                    class="absolute bottom-8 md:bottom-[40vh] left-8 flex items-center justify-center w-12 aspect-square rounded-full bg-gray-300 bg-opacity-50 hover:bg-opacity-70 transition-all hover:bg-gray-400 hover:outline hover:outline-offset-2 hover:outline-gray-400"
+                    data-aos="fade-up">
+                    <span class="sr-only">Slide anterior</span>
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <button id="next-slide" type="button" title="Próximo slide"
+                    class="absolute bottom-8 md:bottom-[40vh] right-8 flex items-center justify-center w-12 aspect-square rounded-full bg-gray-300 bg-opacity-50 hover:bg-opacity-70 transition-all hover:bg-gray-400 hover:outline hover:outline-offset-2 hover:outline-gray-400"
+                    data-aos="fade-up">
+                    <span class="sr-only">Próximo slide</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="s-vehicles" class="overflow-x-hidden py-16">
+            <div class="container mx-auto px-4 lg:px-0">
+                <article class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="flex flex-col bg-red-900" data-aos="fade-right">
+                        <div class="flex flex-col gap-y-4 p-4 md:p-8">
+                            <h3 class="text-pretty font-bold tracking-tight text-gray-100 text-4xl lg:text-5xl">
+                                Veículos Novos
+                            </h3>
+                            <p class="text-pretty text-lg font-medium text-gray-200 sm:text-xl">
+                                Explore nossa seleção exclusiva de veículos novos. Cada modelo é sinônimo de inovação,
+                                tecnologia avançada e desempenho de ponta, garantindo qualidade e confiança em cada
+                                escolha.
+                            </p>
+                        </div>
+                        <div class="relative w-full h-72 md:h-96 overflow-hidden">
+                            <img src="/img/slider/1.jpg" alt="Veículos novos" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-green-900" data-aos="fade-left">
+                        <div class="flex flex-col gap-y-4 p-4 md:p-8">
+                            <h3 class="text-pretty font-bold tracking-tight text-gray-100 text-4xl lg:text-5xl">
+                                Veículos Seminovos
+                            </h3>
+                            <p class="text-pretty text-lg font-medium text-gray-200 sm:text-xl">
+                                Descubra nossos veículos seminovos, rigorosamente inspecionados para garantir qualidade,
+                                segurança e um ótimo custo-benefício. Perfeito para quem busca economia sem abrir mão de
+                                confiabilidade.
+                            </p>
+                        </div>
+                        <div class="relative w-full h-72 md:h-96 overflow-hidden">
+                            <img src="/img/slider/2.jpg" alt="Veículos seminovos" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="s-about" class="bg-gray-100 overflow-x-hidden">
+            <div class="mx-auto py-16 grid gap-16 px-4 md:px-8">
+                <h2 class="text-pretty md:text-center font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl lg:text-balance"
+                    data-aos="fade-in">
+                    Por que escolher a New Car Automóveis?
+                </h2>
+
+                <article class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-start gap-4 bg-white/50 p-2 rounded-lg shadow transition-shadow hover:shadow-md"
+                        data-aos="fade-right">
+                        <span class="aspect-square rounded-lg grid place-items-center bg-red-900 text-white px-2">
+                            <i class="fas fa-certificate text-2xl text-pretty"></i>
+                        </span>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-pretty font-semibold tracking-tight text-gray-800 text-3xl lg:text-balance">
+                                Qualidade garantida</h2>
+                            <p class="text-pretty text-lg text-gray-600 sm:text-xl/8">
+                                Oferecemos veículos com garantia de qualidade e um atendimento impecável.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-white/50 p-2 rounded-lg shadow transition-shadow hover:shadow-md"
+                        data-aos="fade-right">
+                        <span class="aspect-square rounded-lg grid place-items-center bg-red-900 text-white px-2">
+                            <i class="fas fa-check-circle text-2xl text-pretty"></i>
+                        </span>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-pretty font-semibold tracking-tight text-gray-800 text-3xl lg:text-balance">
+                                Veículos revisados</h2>
+                            <p class="text-pretty text-lg text-gray-600 sm:text-xl/8">
+                                Todos os veículos passam por rigorosa inspeção para garantir sua segurança e confiança.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-white/50 p-2 rounded-lg shadow transition-shadow hover:shadow-md"
+                        data-aos="fade-right">
+                        <span class="aspect-square rounded-lg grid place-items-center bg-red-900 text-white px-2">
+                            <i class="fas fa-search text-2xl text-pretty"></i>
+                        </span>
+                        <div class="flex flex-col gap-y-4">
+                            <h2 class="text-pretty font-semibold tracking-tight text-gray-800 text-3xl lg:text-balance">
+                                Inspeção completa</h2>
+                            <p class="text-pretty text-lg text-gray-600 sm:text-xl/8">
+                                Antes da entrega, realizamos uma inspeção completa para garantir que tudo esteja
+                                perfeito.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="s-sales" class="overflow-x-hidden py-12">
+            <div class="container mx-auto px-4 lg:px-0">
+                <h2 class="text-center font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl mb-6"
+                    data-aos="fade-right">
+                    Ofertas Especiais
+                </h2>
+
+                <p class="text-center text-lg text-gray-600 mb-10" data-aos="fade-left">
+                    Encontre o carro dos seus sonhos entre nossas ofertas exclusivas.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow transition-shadow hover:shadow-md overflow-hidden"
+                        data-aos="fade-left">
+                        <img class="w-full h-64 object-cover" src="https://placehold.co/600x600?text=Imagem+do+carro"
+                            alt="Imagem do Carro">
+
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Carro 1</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Descrição atrativa.
+                            </p>
+                            <a href="#" class="text-red-900 font-medium hover:text-orange-700">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow transition-shadow hover:shadow-md overflow-hidden"
+                        data-aos="fade-left" data-aos-delay="100">
+                        <img class="w-full h-64 object-cover" src="https://placehold.co/600x600?text=Imagem+do+carro"
+                            alt="Imagem do Carro">
+
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Carro 2</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Descrição atrativa.
+                            </p>
+                            <a href="#" class="text-red-900 font-medium hover:text-orange-700">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow transition-shadow hover:shadow-md overflow-hidden"
+                        data-aos="fade-left" data-aos-delay="200">
+                        <img class="w-full h-64 object-cover" src="https://placehold.co/600x600?text=Imagem+do+carro"
+                            alt="Imagem do Carro">
+
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Carro 3</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Descrição atrativa.
+                            </p>
+                            <a href="#" class="text-red-900 font-medium hover:text-orange-700">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s-contact" class="overflow-x-hidden bg-gray-100">
+            <div class="container mx-auto px-4 lg:px-0 py-14">
+                <h2 class="text-pretty font-bold tracking-tight text-gray-900 text-4xl lg:text-5xl lg:text-balance"
+                    data-aos="fade-left">
+                    Venha nos visitar
+                </h2>
+
+                <p class="mt-4 text-pretty text-lg text-gray-600 sm:text-xl/8" data-aos="fade-right">
+                    Venha até nós e encontre o carro dos seus sonhos!
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-16 mt-8">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex gap-2 items-start p-4" data-aos="fade-down" data-aos-delay="100">
+                            <div class="grid place-items-center bg-green-900 w-10 h-10 text-xl text-white rounded-full"
+                                aria-label="Ícone de localização">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-gray-800">Endereço</p>
+                                <p class="text-gray-600">
+                                    Rua Qualquer, 123<br>
+                                    <span class="text-sm">Endereço - Cidade/Estado</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2 items-start p-4" data-aos="fade-down">
+                            <div class="grid place-items-center bg-green-900 w-10 h-10 text-xl text-white rounded-full"
+                                aria-label="Ícone de e-mail">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-gray-800">E-mail</p>
+                                <p class="text-gray-600">emaildaempresa@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2 items-start p-4" data-aos="fade-down" data-aos-delay="200">
+                            <div class="grid place-items-center bg-green-900 w-10 h-10 text-xl text-white rounded-full"
+                                aria-label="Ícone de telefone">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-gray-800">Telefone</p>
+                                <p class="text-gray-600">(85) 99999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe title="Localização do New Car Automóveis" class="w-full h-72 md:h-96"
+                        src="https://maps.google.com/maps?t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                        scrolling="no" data-aos="fade-in"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 text-center py-2 text-sm">
+        <a href="https://lezzin.github.io" target="_blank">&copy; Demonstração desenvolvida por Leandro Adrian.</a>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
